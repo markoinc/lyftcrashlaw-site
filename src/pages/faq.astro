@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LeadForm from '../components/LeadForm.astro';
+
+const faqs = [
+  {
+    question: "What should I do immediately after a Lyft accident?",
+    answer: "Call 911 and get medical attention, even for minor injuries. Take photos of the scene, vehicles, and your injuries. Screenshot your Lyft ride receipt in the app — this proves the driver was on duty. Get the driver's name, license plate, and contact info. File a police report and don't sign anything from insurance companies before consulting an attorney."
+  },
+  {
+    question: "How does Lyft's insurance coverage differ from Uber's?",
+    answer: "Both Lyft and Uber provide similar $1 million coverage during active rides, but there are differences. Lyft's 'Period 1' coverage (app on, waiting for ride request) provides slightly different limits than Uber's. Lyft also has specific requirements for driver background checks and vehicle inspections that can affect liability claims."
+  },
+  {
+    question: "How does Lyft's three-phase insurance system work?",
+    answer: "Lyft provides tiered coverage: Phase 1 (app on, no match) offers contingent liability coverage around $50K. Phase 2 (matched, en route to pickup) and Phase 3 (passenger in vehicle) provide $1 million in liability plus uninsured/underinsured motorist protection. When the app is off, only the driver's personal insurance applies."
+  },
+  {
+    question: "Does Lyft Pink membership affect my accident claim?",
+    answer: "No, Lyft Pink is a subscription service for ride discounts and perks — it doesn't affect the insurance coverage you receive as a passenger. Whether you're a Pink member or occasional rider, you're protected by the same $1 million policy during active trips."
+  },
+  {
+    question: "Can I sue Lyft directly for my injuries?",
+    answer: "Lyft classifies drivers as independent contractors, which can limit direct liability. However, you can always file a claim against Lyft's commercial insurance. In certain circumstances — like negligent hiring practices or failure to address known safety issues — you may have grounds to sue Lyft directly."
+  },
+  {
+    question: "What if my Lyft driver was distracted by the app during the accident?",
+    answer: "Driver distraction is a leading cause of Lyft accidents. If your driver was checking the app, adjusting navigation, or responding to ride requests when the crash occurred, this strengthens your case. Lyft's trip data and the driver's phone records can help prove distraction."
+  },
+  {
+    question: "I was a Lyft passenger — do I have a strong case?",
+    answer: "Yes, very strong. As a passenger, you have no fault in the accident. Whether the Lyft driver or another motorist caused the crash, you can pursue compensation through the at-fault party's insurance and/or Lyft's $1 million commercial policy."
+  },
+  {
+    question: "How much does it cost to hire a Lyft accident lawyer?",
+    answer: "Most Lyft accident attorneys work on contingency, meaning you pay nothing upfront. The attorney only gets paid if you win — typically 33-40% of your settlement. This allows accident victims to get quality legal representation regardless of their financial situation."
+  },
+  {
+    question: "What about Lyft's 'Round Up & Donate' — does it affect my claim?",
+    answer: "No, Lyft's donation feature has no impact on accident claims or insurance coverage. It's purely a charitable contribution option. Your legal rights and the insurance available to you remain the same regardless of whether you participate in Round Up."
+  },
+  {
+    question: "I'm a Lyft driver who was injured — what are my options?",
+    answer: "As a Lyft driver, you may claim against the at-fault party's insurance, Lyft's insurance (if on an active trip), your own PIP coverage if required in your state, and potentially workers' compensation in jurisdictions that recognize gig workers as employees."
+  },
+  {
+    question: "What compensation can I receive from a Lyft accident claim?",
+    answer: "You may recover compensation for medical bills (past and future), lost income, pain and suffering, emotional distress, property damage, and loss of earning capacity. In cases of extreme negligence, punitive damages may also be available."
+  },
+  {
+    question: "How long does a Lyft accident case typically take to resolve?",
+    answer: "Most cases settle within 6-18 months. Straightforward cases with clear liability may resolve faster, while complex cases involving severe injuries or disputed fault can take longer. Your attorney will give you a realistic timeline after evaluating your specific situation."
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+---
+
+<BaseLayout 
+  title="Lyft Accident FAQ | Common Questions About Lyft Crash Claims"
+  description="Frequently asked questions about Lyft accident claims, Lyft's insurance policy, how Lyft differs from Uber, and your legal rights after a Lyft crash."
+  schema={faqSchema}
+>
+  <section class="py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Lyft Accident FAQ</h1>
+      <p class="text-xl text-gray-200">
+        Get answers to common questions about Lyft accident claims and your legal rights.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="space-y-6">
+        {faqs.map((faq, index) => (
+          <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+            <h2 class="text-lg font-bold text-primary mb-3 flex items-start gap-3">
+              <span class="bg-secondary text-white w-8 h-8 rounded-full flex items-center justify-center text-sm flex-shrink-0">
+                {index + 1}
+              </span>
+              {faq.question}
+            </h2>
+            <p class="text-gray-600 ml-11">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Still Have Questions?</h2>
+      <LeadForm source="faq-page" title="Get Personalized Answers" subtitle="Speak with an experienced Lyft accident attorney who can answer your specific questions." />
+    </div>
+  </section>
+</BaseLayout>

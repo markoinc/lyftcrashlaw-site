@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LeadForm from '../components/LeadForm.astro';
+---
+
+<BaseLayout 
+  title="About Us | Lyft Accident Lawyer"
+  description="Learn about our mission to connect Uber and Lyft accident victims with experienced attorneys. Free case evaluations nationwide."
+>
+  <section class="py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">About Lyft Lawyers Near Me</h1>
+      <p class="text-xl text-gray-200">
+        Connecting Lyft accident victims with experienced attorneys who understand the complexities of Uber and Lyft insurance claims.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+          <p class="text-gray-600 mb-4">
+            With over 7.6 billion Lyft trips annually, Lyft accidents have become increasingly common. Victims often face a confusing maze of insurance policies — Lyft's coverage, the driver's personal insurance, and third-party policies all potentially apply.
+          </p>
+          <p class="text-gray-600 mb-4">
+            We created Lyft Lawyers Near Me to cut through that complexity. Our nationwide network connects injured passengers, drivers, and bystanders with attorneys who specialize in Lyft accident cases — lawyers who understand Lyft's tiered insurance system and how to maximize your compensation.
+          </p>
+          <p class="text-gray-600">
+            <strong>Our promise:</strong> A free case evaluation, no upfront fees, and attorneys who fight for Lyft accident victims' rights.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="text-8xl mb-4">🚗⚖️</div>
+          <div class="grid grid-cols-2 gap-4 text-center">
+            <div class="bg-gray-50 p-6 rounded-xl">
+              <div class="text-3xl font-bold text-secondary">500+</div>
+              <div class="text-gray-600">Partner Attorneys</div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl">
+              <div class="text-3xl font-bold text-secondary">50</div>
+              <div class="text-gray-600">States Covered</div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl">
+              <div class="text-3xl font-bold text-secondary">$100M+</div>
+              <div class="text-gray-600">Recovered</div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl">
+              <div class="text-3xl font-bold text-secondary">24/7</div>
+              <div class="text-gray-600">Availability</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold mb-3">Lyft Specialists</h3>
+          <p class="text-gray-600">Our attorneys understand Lyft's complex insurance structure, the $1M coverage policies, and how to navigate claims against multiple insurers.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+          <div class="text-4xl mb-4">💰</div>
+          <h3 class="text-xl font-bold mb-3">No Win, No Fee</h3>
+          <p class="text-gray-600">You pay nothing unless we win your case. Free consultations, no upfront costs, no hidden fees.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+          <div class="text-4xl mb-4">⚡</div>
+          <h3 class="text-xl font-bold mb-3">Fast Response</h3>
+          <p class="text-gray-600">Get connected with a local attorney within 24 hours. Time matters in accident cases — act fast.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Who We Help</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-gray-50 p-6 rounded-xl text-center">
+          <div class="text-4xl mb-3">🧑‍💼</div>
+          <h3 class="font-bold mb-2">Lyft Passengers</h3>
+          <p class="text-gray-600 text-sm">Injured while riding in an Uber or Lyft vehicle</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl text-center">
+          <div class="text-4xl mb-3">🚘</div>
+          <h3 class="font-bold mb-2">Lyft Drivers</h3>
+          <p class="text-gray-600 text-sm">Uber/Lyft drivers injured in accidents during trips</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl text-center">
+          <div class="text-4xl mb-3">🚗</div>
+          <h3 class="font-bold mb-2">Other Drivers</h3>
+          <p class="text-gray-600 text-sm">Motorists hit by Uber or Lyft drivers</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl text-center">
+          <div class="text-4xl mb-3">🚶</div>
+          <h3 class="font-bold mb-2">Pedestrians</h3>
+          <p class="text-gray-600 text-sm">Pedestrians and cyclists injured by Lyft vehicles</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Get Your Free Case Evaluation</h2>
+      <LeadForm source="about-page" title="Injured in a Lyft Accident?" subtitle="Speak with an experienced Lyft accident attorney today. No fees unless you win." />
+    </div>
+  </section>
+</BaseLayout>
