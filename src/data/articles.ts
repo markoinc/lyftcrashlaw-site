@@ -372,9 +372,9 @@ export const articles: Article[] = [
     publishDate: "2025-02-28"
   },
   {
-    slug: "Lyft-insurance-vs-lyft",
-    title: "Lyft vs. Lyft Insurance Coverage",
-    description: "Comparing insurance coverage between Uber and Lyft: similarities and differences for accident claims.",
+    slug: "lyft-insurance-vs-uber",
+    title: "Lyft vs. Uber Insurance Coverage",
+    description: "Comparing insurance coverage between Lyft and Uber: similarities and differences for accident claims.",
     category: "Insurance",
     readTime: "8 min",
     publishDate: "2025-03-01"

@@ -31,7 +31,7 @@ const webhookUrl = "https://services.leadconnectorhq.com/hooks/OsNgWuy8oZzLbp5BX
           
           <form action={webhookUrl} method="POST" class="space-y-6">
             <input type="hidden" name="source" value="free-consultation" />
-            <input type="hidden" name="site" value="Lyftlawyersnearme.com" />
+            <input type="hidden" name="site" value="lyftcrashlaw.com" />
             
             <!-- Personal Info -->
             <div>
@@ -67,22 +67,22 @@ const webhookUrl = "https://services.leadconnectorhq.com/hooks/OsNgWuy8oZzLbp5BX
                   <label class="block text-sm font-medium mb-1">Your Role in the Accident *</label>
                   <select name="accidentType" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary">
                     <option value="">Select your role...</option>
-                    <option value="lyft-passenger">Uber/Lyft Passenger</option>
-                    <option value="lyft-driver">Uber/Lyft Driver</option>
+                    <option value="lyft-passenger">Lyft Passenger</option>
+                    <option value="lyft-driver">Lyft Driver</option>
                     <option value="other-driver">Driver of Another Vehicle</option>
-                    <option value="pedestrian">Pedestrian Hit by Uber/Lyft</option>
-                    <option value="cyclist">Cyclist Hit by Uber/Lyft</option>
+                    <option value="pedestrian">Pedestrian Hit by Lyft</option>
+                    <option value="cyclist">Cyclist Hit by Lyft</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
                 <div>
-                  <label class="block text-sm font-medium mb-1">Lyft Company *</label>
-                  <select name="LyftCompany" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary">
+                  <label class="block text-sm font-medium mb-1">Rideshare Company *</label>
+                  <select name="rideshareCompany" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary">
                     <option value="">Select company...</option>
                     <option value="lyft">Lyft</option>
-                    <option value="lyft">Lyft</option>
-                    <option value="both">Both/Unknown</option>
-                    <option value="other">Other Lyft</option>
+                    <option value="uber">Uber</option>
+                    <option value="unknown">Unknown</option>
+                    <option value="other">Other Rideshare</option>
                   </select>
                 </div>
               </div>
@@ -181,8 +181,6 @@ const webhookUrl = "https://services.leadconnectorhq.com/hooks/OsNgWuy8oZzLbp5BX
               </li>
             </ul>
           </div>
-
-          <div class="bg-gray-50 p-6 rounded-xl">
 
           <div class="bg-gray-50 p-6 rounded-xl">
             <h3 class="font-bold mb-4">⏱️ Time Matters</h3>

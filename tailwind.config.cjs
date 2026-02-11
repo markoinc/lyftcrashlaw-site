@@ -5,18 +5,18 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#000000',
-          light: '#1a1a1a',
-          dark: '#000000',
+          DEFAULT: '#2d2d2d',
+          light: '#3d3d3d',
+          dark: '#1d1d1d',
         },
         secondary: {
-          DEFAULT: '#276EF1',
-          light: '#4284f5',
-          dark: '#1a5ad9',
+          DEFAULT: '#ff00bf',
+          light: '#ff33cc',
+          dark: '#cc0099',
         },
         accent: {
-          DEFAULT: '#09091a',
-          purple: '#7B68EE',
+          DEFAULT: '#ff00bf',
+          purple: '#ea00d9',
           green: '#06c167',
         }
       },

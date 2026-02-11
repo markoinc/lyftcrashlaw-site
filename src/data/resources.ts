@@ -8,9 +8,9 @@ export interface Resource {
 
 export const resources: Resource[] = [
   {
-    slug: "what-to-do-after-Lyft-accident",
+    slug: "what-to-do-after-lyft-accident",
     title: "What to Do After a Lyft Accident",
-    description: "Step-by-step guide on what to do immediately after being involved in an Uber or Lyft accident.",
+    description: "Step-by-step guide on what to do immediately after being involved in a Lyft accident.",
     category: "Guides",
     readTime: "10 min"
   },
@@ -36,9 +36,9 @@ export const resources: Resource[] = [
     readTime: "9 min"
   },
   {
-    slug: "lyft-vs-lyft-insurance",
-    title: "Lyft vs. Lyft Insurance Comparison",
-    description: "Side-by-side comparison of Uber and Lyft insurance coverage and claim processes.",
+    slug: "lyft-vs-uber-insurance",
+    title: "Lyft vs. Uber Insurance Comparison",
+    description: "Side-by-side comparison of Lyft and Uber insurance coverage and claim processes.",
     category: "Comparisons",
     readTime: "8 min"
   },
