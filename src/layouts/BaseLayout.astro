@@ -18,7 +18,7 @@ const {
 } = Astro.props;
 
 const siteUrl = 'https://lyftcrashlaw.com';
-const suffix = " | Lyft Accident Lawyer";
+const suffix = " | Lyft Crash Help";
 
 // Truncate function to keep titles under 60 chars
 function truncateTitle(t: string, suffix: string): string {
@@ -54,7 +54,7 @@ const fullTitle = truncateTitle(title, suffix);
   <meta property="og:type" content="website">
   <meta property="og:title" content={fullTitle}>
   <meta property="og:description" content={description}>
-  <meta property="og:site_name" content="Lyft Crash Law">
+  <meta property="og:site_name" content="Lyft Crash Help">
   
   <!-- Schema.org -->
   {schema && (
@@ -66,7 +66,7 @@ const fullTitle = truncateTitle(title, suffix);
   {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    "name": "Lyft Crash Law",
+    "name": "Lyft Crash Help",
     "description": "Connecting Lyft accident victims with experienced attorneys nationwide",
     "url": "https://lyftcrashlaw.com",
     "serviceType": "Legal Referral",
@@ -83,8 +83,8 @@ const fullTitle = truncateTitle(title, suffix);
     <nav class="max-w-7xl mx-auto px-4 py-4">
       <div class="flex items-center justify-between">
         <a href="/" class="text-2xl font-bold flex items-center gap-2">
-          <span class="text-3xl">🚗</span>
-          <span>Lyft <span class="text-secondary">Crash Law</span></span>
+          <span class="text-3xl">🚕</span>
+          <span>Lyft <span class="text-secondary">Crash Help</span></span>
         </a>
         <div class="hidden md:flex items-center space-x-6">
           <a href="/states/" class="hover:text-secondary transition">Find by State</a>
@@ -128,7 +128,7 @@ const fullTitle = truncateTitle(title, suffix);
       <div class="grid md:grid-cols-4 gap-8">
         <div>
           <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
-            <span>🚗</span> Lyft Crash Law
+            <span>🚕</span> Lyft Crash Help
           </h3>
           <p class="text-gray-400 text-sm">
             Helping Lyft accident victims find experienced legal representation nationwide.
@@ -170,7 +170,7 @@ const fullTitle = truncateTitle(title, suffix);
           <a href="/sitemap/" class="hover:text-white">Sitemap</a>
         </div>
         <div class="text-center text-gray-500 text-sm">
-          <p>© 2026 Lyft Crash Law. All rights reserved.</p>
+          <p>© 2026 Lyft Crash Help. All rights reserved.</p>
           <p class="mt-2">Built by Sierra, an autonomous AI agent.</p>
           <p class="mt-1 text-xs">This site provides legal information, not legal advice. Consult an attorney for specific guidance. Not affiliated with Lyft, Inc.</p>
         </div>
@@ -178,11 +178,11 @@ const fullTitle = truncateTitle(title, suffix);
         <!-- Legal Disclaimer -->
         <div class="border-t border-gray-800 mt-8 pt-6">
           <p class="text-xs text-gray-500 text-center max-w-4xl mx-auto">
-            <strong>LEGAL DISCLAIMER:</strong> Lyft Crash Law is not a law firm and does not provide legal advice. 
+            <strong>LEGAL DISCLAIMER:</strong> Lyft Crash Help is not a law firm and does not provide legal advice. 
             We are a free accident consultation service that helps victims understand their options and connects 
             them with qualified attorneys. By submitting your information, you consent to being contacted by a 
             participating attorney. Attorney services are provided by independent law firms. No fees unless you win.
-            Lyft Crash Law is not affiliated with Lyft, Inc.
+            Lyft Crash Help is not affiliated with Lyft, Inc.
           </p>
         </div>
       </div>
